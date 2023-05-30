@@ -1,0 +1,206 @@
+*{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #f00; */
+    font-size: 50px;
+    font-style: italic;
+
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #ddd;
+}
+
+.aba{
+    background-color: #aa9208;
+    color: #000;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
+    margin-right: 1px;
+}
+
+.abaSelecionada{
+    background-color: #ddd !important;
+}
+
+.if_principal{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.btn_geral{
+    background-color: #aa9208;
+    color: #000;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/* - NOVO - */
+
+#novo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.elementosForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.campoForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.campoForm input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.botoesForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/************/
+
+
+/* - PESQUISAR - */
+
+.pesquisa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.campoPesq{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    
+}
+
+input[type = text]{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+label{
+    margin-right: 5px;
+}
+
+.dgv{
+    display: flex;
+    width: 100vw;
+    align-items: flex-start;
+    justify-content: center;
+}
+.resultado{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 70vw;
+}
+
+.titulos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    width: inherit;
+
+    background-color: #aa9208;
+}
+
+.dados{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: inherit;
+}
+
+.linhadados{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    width: inherit;
+    padding: 3px;
+
+    background-color: #fff;
+}
+
+.titulo{
+    border-right: 1px solid #ddd;
+    padding: 3px;
+}
+
+.c1{
+    width: 80%;
+}
+.c2{
+    width: 12%;
+    text-align: center;
+}
+.c3{
+    width: 8%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+/*****************/
+
+/* - GESTÃO - */
+
+.iconeop{
+    width: 35%;
+    cursor: pointer;
+}
+/*****************/
