@@ -167,7 +167,7 @@ label{
 .linhadados{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: row;
     width: inherit;
     padding: 3px;
@@ -178,6 +178,10 @@ label{
 .titulo{
     border-right: 1px solid #ddd;
     padding: 3px;
+}
+
+.c0{
+    display: none;
 }
 
 .c1{
@@ -204,3 +208,78 @@ label{
     cursor: pointer;
 }
 /*****************/
+
+/* - GESTÃO EDITAR - */
+
+.fundopopup{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99999999999999999;
+}
+
+.janelapopup{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    width: 500px;
+}
+
+.titulopopup{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: #fff;
+    background-color: #000;
+
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+    width: inherit;
+}
+
+.principalpopup{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    width: inherit;
+    padding: 5px;
+
+    background-color: #ddd;
+
+}
+
+.rodapepopup{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    width: inherit;
+    border-radius: 0px 0px 5px 5px;
+
+    background-color: #aaa;
+}
+
+#f_id{
+    display: none;
+} 
+
+/*****************/
+
+/* Classes auxiliares  */
+
+.ocultar{
+    display: none !important;
+}
+
+/***********************/
