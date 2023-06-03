@@ -1,11 +1,16 @@
 const dados = document.querySelector("#dados");
 const fundopopup = document.querySelector("#fundopopup");
+const fundopopup2 = document.querySelector("#fundopopup2");
 const btn_gravar_popup = document.querySelector("#btn_gravar_popup");
 const btn_cancelar_popup = document.querySelector("#btn_cancelar_popup");
+const btn_cancelar_popup2 = document.querySelector("#btn_cancelar_popup2");
 const btn_deletar_popup2 = document.querySelector("#btn_deletar_popup2");
 const f_id = document.querySelector("#f_id");
 const f_nome = document.querySelector("#f_nome");
 const f_telefone = document.querySelector("#f_telefone");
+const f_id2 = document.querySelector("#f_id2");
+const f_nome2 = document.querySelector("#f_nome2");
+const f_telefone2 = document.querySelector("#f_telefone2");
 
 btn_gravar_popup.addEventListener("click", (evt)=>{
     fundopopup.classList.add("ocultar");
@@ -24,6 +29,15 @@ btn_gravar_popup.addEventListener("click", (evt)=>{
 
 btn_cancelar_popup.addEventListener("click", (evt)=>{
     fundopopup.classList.add("ocultar");
+});
+
+btn_cancelar_popup2.addEventListener("click", (evt)=>{
+    fundopopup2.classList.add("ocultar2");
+});
+
+btn_deletar_popup2.addEventListener("click", (evt)=>{
+    fundopopup2.classList.add("ocultar2");
+    preencherdvg();
 });
 
 
@@ -67,16 +81,23 @@ const preencherdvg = ()=>{
                 f_id.value = dados[0].innerHTML;
                 f_nome.value = dados[1].innerHTML;
                 f_telefone.value = dados[2].innerHTML;
-               
-            })
+                
+            });
 
             const imgDelete = document.createElement("img");
             imgDelete.setAttribute("src","/public/icons/delete.svg");
             imgDelete.setAttribute("class","iconeop");
             imgDelete.addEventListener("click", (evt)=>{
-                deletarContato(evt.target.parentNode.parentNode.firstChild.innerHTML);
-            })
-            
+                // fundopopup2.classList.remove("ocultar2");
+
+                // const dados2 = [...evt.target.parentNode.parentNode.childNodes];
+                // f_id2.value = dados2[0].innerHTML;
+                // f_nome2.value = dados2[1].innerHTML;
+                // f_telefone2.value = dados2[2].innerHTML;
+
+                deletarContato(evt.target.parentNode.parentNode.firstChild.innerHTML); 
+
+            });
             c3.appendChild(imgEditar);
             c3.appendChild(imgDelete);
             

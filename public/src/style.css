@@ -138,12 +138,13 @@ label{
     align-items: flex-start;
     justify-content: center;
 }
+
 .resultado{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    width: 70vw;
+    width: 80vw;
 }
 
 .titulos{
@@ -155,6 +156,7 @@ label{
 
     background-color: #aa9208;
 }
+
 
 .dados{
     display: flex;
@@ -177,7 +179,7 @@ label{
 
 .titulo{
     border-right: 1px solid #ddd;
-    padding: 3px;
+    padding: 2px;
 }
 
 .c0{
@@ -186,13 +188,14 @@ label{
 
 .c1{
     width: 80%;
+    text-align: center;
 }
 .c2{
-    width: 12%;
+    width: 10%;
     text-align: center;
 }
 .c3{
-    width: 8%;
+    width: 10%;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -212,6 +215,19 @@ label{
 /* - GESTÃO EDITAR - */
 
 .fundopopup{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99999999999999999;
+}
+
+.fundopopup2{
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -274,6 +290,20 @@ label{
     display: none;
 } 
 
+#msg_h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    padding-bottom: 400px;
+    
+    color: red;
+}
+
+#f_id2{
+    display: none;
+}
+
 /*****************/
 
 /* Classes auxiliares  */
@@ -282,4 +312,20 @@ label{
     display: none !important;
 }
 
+.ocultar2{
+    display: none !important;
+}
+
 /***********************/
+
+
+/* AGENDADOS */
+
+.status{
+    display: none;
+}
+
+.c22{
+    width: 10%;
+    text-align: center;
+}
