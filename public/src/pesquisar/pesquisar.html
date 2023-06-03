@@ -9,6 +9,33 @@
 </head>
 
 <body>
+
+  <div id="fundopopup" class="fundopopup ocultar">
+    <div id="janelapopup" class="janelapopup">
+      <div id="titulopopup" class="titulopopup">Agendar contato</div>
+      <div id="principalpopup" class="principalpopup">
+        <div class="campoForm">
+          <input type="text" name="f_id" id="f_id" readonly style="cursor: not-allowed">
+        </div>
+
+        <div class="campoForm">
+          <label>NOME</label>
+          <input type="text" name="f_nome" id="f_nome" readonly style="cursor: not-allowed">
+        </div>
+    
+        <div class="campoForm">
+          <label>Definir horário</label>
+          <input type="time" id="f_horario" name="f_horario" required>
+        </div>
+      </div>
+      <div id="rodapepopup" class="rodapepopup">
+        <button class="btn_geral" id="btn_gravar_popup">Salvar</button>
+        <button class="btn_geral" id="btn_cancelar_popup">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+
     <div id="pesquisa" class="pesquisa">
       <div class="campoPesq">
         <label>Nome</label>
