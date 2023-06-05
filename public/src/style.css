@@ -251,7 +251,7 @@ label{
 
 .titulopopup{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     color: #fff;
@@ -328,4 +328,8 @@ label{
 .c22{
     width: 10%;
     text-align: center;
+}
+
+#f_id3{
+    display: none;
 }

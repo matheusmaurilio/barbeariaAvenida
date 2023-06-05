@@ -1,7 +1,12 @@
 const dados = document.querySelector("#dados");
 const f_id = document.querySelector("#f_id");
 const statusd = document.querySelector("#status");
+const btn_cancelar_popup3 = document.querySelector("#btn_cancelar_popup3");
+const btn_gravar_popup3 = document.querySelector("#btn_gravar_popup3");
 
+btn_cancelar_popup3.addEventListener("click", (evt)=>{
+    fundopopup3.classList.add("ocultar");
+});
 
 const preencherdvg = ()=>{
     dados.innerHTML = "";
@@ -48,11 +53,20 @@ const preencherdvg = ()=>{
                 imgDelete.setAttribute("src","/public/icons/delete.svg");
                 imgDelete.setAttribute("class","iconeop");
                 imgDelete.addEventListener("click", (evt)=>{
+                    fundopopup3.classList.remove("ocultar");
+
                     const dados2 = [...evt.target.parentNode.parentNode.childNodes]; 
                     const statusd = dados2[4].innerHTML;
                     const id = dados2[0].innerHTML;
 
-                    atualizarContato(id, statusd);
+                    f_nome.value = dados2[2].innerHTML
+                    f_horario.value = dados2[1].innerHTML
+
+                    btn_gravar_popup3.addEventListener("click", (evt)=>{
+                        fundopopup3.classList.add("ocultar");
+                        atualizarContato(id, statusd);
+                        location.reload(true);
+                    });
     
                 });
 

@@ -19,7 +19,6 @@ btn_gravar_popup.addEventListener("click", (evt)=>{
     fetch(endpoint)
     .then(res=>{
         if (res.status == "200"){
-            alert("Dados atualizados!")
             preencherdvg();
         }else{
             alert("Erro ao atualizar dados")
@@ -34,12 +33,6 @@ btn_cancelar_popup.addEventListener("click", (evt)=>{
 btn_cancelar_popup2.addEventListener("click", (evt)=>{
     fundopopup2.classList.add("ocultar2");
 });
-
-btn_deletar_popup2.addEventListener("click", (evt)=>{
-    fundopopup2.classList.add("ocultar2");
-    preencherdvg();
-});
-
 
 const preencherdvg = ()=>{
     dados.innerHTML = "";
@@ -88,14 +81,26 @@ const preencherdvg = ()=>{
             imgDelete.setAttribute("src","/public/icons/delete.svg");
             imgDelete.setAttribute("class","iconeop");
             imgDelete.addEventListener("click", (evt)=>{
-                // fundopopup2.classList.remove("ocultar2");
+                fundopopup2.classList.remove("ocultar2");
 
-                // const dados2 = [...evt.target.parentNode.parentNode.childNodes];
-                // f_id2.value = dados2[0].innerHTML;
-                // f_nome2.value = dados2[1].innerHTML;
-                // f_telefone2.value = dados2[2].innerHTML;
+                const dados2 = [...evt.target.parentNode.parentNode.childNodes];
+                f_nome2.value = dados2[1].innerHTML;
+                f_telefone2.value = dados2[2].innerHTML;
 
-                deletarContato(evt.target.parentNode.parentNode.firstChild.innerHTML); 
+                const id = evt.target.parentNode.parentNode.firstChild.innerHTML;
+
+                btn_deletar_popup2.addEventListener("click", (evt)=>{
+                    fundopopup2.classList.add("ocultar2");
+                    const endpoint = `http://127.0.0.1:1880/deletarcontatos/${id}`;
+                    fetch(endpoint)
+                    .then(res=>{
+                        if(res.status == "200"){
+                            preencherdvg();
+                        }
+                    });
+                });
+                
+                //deletarContato(evt.target.parentNode.parentNode.firstChild.innerHTML); 
 
             });
             c3.appendChild(imgEditar);
