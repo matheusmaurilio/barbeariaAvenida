@@ -1,4 +1,4 @@
-# barbeariaAvenida
+# Barbearia Avenida
 
 Projeto para gerenciamento de clientes de uma barbearia.
 
@@ -7,3 +7,13 @@ Projeto para gerenciamento de clientes de uma barbearia.
 * Editar cliente
 * Remover cliente
 * Agendar cliente
+
+## Stacks:
+* HTML
+* CSS
+* Javascript
+
+## Dev Tools:
+* VSCode
+* WampServer
+* Node-red
