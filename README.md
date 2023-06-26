@@ -12,6 +12,7 @@ Projeto para gerenciamento de clientes de uma barbearia.
 * HTML
 * CSS
 * Javascript
+* SQL
 
 ## Dev Tools:
 * VSCode
