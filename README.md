@@ -2,7 +2,7 @@
 
 Projeto para gerenciamento de clientes de uma barbearia.
 
-##Funções:
+## Funções:
 * Cadastrar cliente
 * Editar cliente
 * Remover cliente
